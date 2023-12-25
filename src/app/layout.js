@@ -1,3 +1,4 @@
+import MainHeader from './Components/MainHeader'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -12,7 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <link rel="icon" href="/tkf-logo.jpeg" type="image" sizes="any" />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MainHeader>{children}</MainHeader></body>
     </html>
   )
 }
