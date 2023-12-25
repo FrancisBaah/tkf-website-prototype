@@ -24,6 +24,14 @@
   font-weight: 600;
   line-height: normal;
 }
+.subtitle {
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .detail {
   color: #000;
   /* text-align: center; */
@@ -42,4 +50,16 @@
 .header-btn:hover{
   border-bottom: 1px solid #090866;
   color: #090866;
+}
+
+input, textarea{
+  border: 2px solid black;
+  color: #000;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 10px;
+  padding: 5px;
 }

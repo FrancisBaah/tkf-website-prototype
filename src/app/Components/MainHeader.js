@@ -26,14 +26,14 @@ function MainHeader({ children }) {
           }}
           className="flex flex-row items-center"
         >
-          <div className="w-10 h-10">
+          <Link href={"/"} className="w-10 h-10">
             <Image
               width={100}
               height={100}
               alt="tkf logo"
               src={"/tkf-logo.jpeg"}
             />
-          </div>
+          </Link>
         </motion.div>
         <motion.div className="flex gap-3">
           <Link className="header-btn" href={"/"}>
@@ -41,6 +41,12 @@ function MainHeader({ children }) {
           </Link>
           <Link className="header-btn" href={"/About-Us"}>
             About Us
+          </Link>
+          <Link className="header-btn" href={"/Services"}>
+            Services
+          </Link>
+          <Link className="header-btn" href={"/Projects"}>
+            projects
           </Link>
           <Link className="header-btn" href={"/Contact"}>
             Contact Us
@@ -75,7 +81,7 @@ function MainHeader({ children }) {
           </p>
         </motion.div>
       </header>
-      <main className="max-w-6xl mx-auto min-h-[200px]">
+      <main className="max-w-6xl mx-auto min-h-[400px]">
         <HeaderTitle/>{children}</main>
       <div className="z-20 sticky bottom-2 float-right">
         <SocialIcon
