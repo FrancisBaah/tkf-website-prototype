@@ -1,5 +1,7 @@
+import Link from "next/link";
 import React from "react";
-
+import { BuildingOffice2Icon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 const HomePage = () => {
   return (
     <div className="h-full overflow-hidden">
@@ -12,15 +14,51 @@ const HomePage = () => {
         <source src="tkf.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative z-10 text-white text-center h-full mt-[200px] bg-black/10">
-        <h2 className="text-4xl font-bold mb-6">Welcome to TKF Construction</h2>
-        {/* <p className="text-lg mb-8">
-          Building the future of Dubai with innovation, quality, and dedication.
+      <div className="w-screen h-screen bg-black/50 absolute left-0 top-0"></div>
+      <div className="relative z-10 text-white text-center h-full mt-[200px]">
+        <div className="w-full flex flex-col items-center">
+          <h2 className="text-2xl font-bold mb-6">
+            Building the future of Dubai <br /> with innovation, quality, and
+            dedication.
+          </h2>
+          {/* <p className="text-lg mb-8">
+          Welcome to TKF Construction
         </p>
         <p className=" text-white">our Trusted Partner in
           Building Dreams. We bring expertise, innovation, and quality to every
           project we undertake. Explore the possibilities with us.
         </p> */}
+          <div className="flex gap-8">
+            <span className="w-14 h-14 bg-black/80 flex items-center justify-center group">
+              <Link href={""} className="">
+                <BuildingOffice2Icon className="w-8" />
+                <p className="hidden group-hover:block hide">Building</p>
+              </Link>
+            </span>
+            <span className="w-14 h-14 bg-black/80 flex items-center justify-center group">
+              <Link href={""} className="">
+                <Image
+                  width={100}
+                  height={100}
+                  src={"/architect.png"}
+                  className="w-8 h-8 bg-white"
+                />
+                <p className=" hidden hide group-hover:block">Engineers</p>
+              </Link>
+            </span>
+            <span className="w-14 h-14 bg-black/80 flex items-center justify-center group">
+              <Link href={""} className="">
+                <Image
+                  width={100}
+                  height={100}
+                  src={"/crane.png"}
+                  className="w-8 h-8 bg-white"
+                />
+                <p className="hidden hide group-hover:block">Highway</p>
+              </Link>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
