@@ -70,4 +70,5 @@ input, textarea{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: all ease-out 1.5s;
 }

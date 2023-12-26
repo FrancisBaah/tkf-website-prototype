@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { BuildingOffice2Icon } from "@heroicons/react/24/solid";
+import { GiRailRoad, GiStoneTower  } from "react-icons/gi";
 import Image from "next/image";
 const HomePage = () => {
   return (
@@ -37,23 +38,15 @@ const HomePage = () => {
             </span>
             <span className="w-14 h-14 bg-black/80 flex items-center justify-center group">
               <Link href={""} className="">
-                <Image
-                  width={100}
-                  height={100}
-                  src={"/architect.png"}
-                  className="w-8 h-8 bg-white"
+                <GiStoneTower 
+                  className="text-[30px]"
                 />
                 <p className=" hidden hide group-hover:block">Engineers</p>
               </Link>
             </span>
             <span className="w-14 h-14 bg-black/80 flex items-center justify-center group">
               <Link href={""} className="">
-                <Image
-                  width={100}
-                  height={100}
-                  src={"/crane.png"}
-                  className="w-8 h-8 bg-white"
-                />
+                <GiRailRoad className="text-[30px]" />
                 <p className="hidden hide group-hover:block">Highway</p>
               </Link>
             </span>
