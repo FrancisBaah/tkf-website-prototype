@@ -31,7 +31,7 @@ function MainHeader({ children }) {
               width={100}
               height={100}
               alt="tkf logo"
-              src={"/tkf-logo.jpeg"}
+              src={"/tkf-logo.png"}
             />
           </Link>
         </motion.div>
