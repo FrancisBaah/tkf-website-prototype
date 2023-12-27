@@ -5,7 +5,7 @@ const page = () => {
   return (
     <section className="bg-gray-200 py-12">
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:mx-8">
         {/* Service Card 1 */}
         <div className="bg-white p-6 rounded-md shadow-md">
           <Image src={"/jabel-front.jpeg"} width={500} height={500} alt='front' className="w-full h-48 object-cover"/>

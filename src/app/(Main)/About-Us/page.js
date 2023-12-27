@@ -32,8 +32,21 @@ const page = () => {
         our clients. We look forward to contributing to the continued
         development and success of Dubai's thriving construction landscape.
       </p>
-      <h1 className="title mb-7">Vision</h1>
-      <h1 className="titile mb-7">Mission</h1>
+      <h2 className="title">Our Vision</h2>
+      <p className="detail mb-8 text-center">
+        At TKF Construction, we envision a perfect partnership where your dreams
+        and our expertise converge to create something extraordinary.<br/> We are
+        dedicated to transforming your vision into reality, step by step, brick
+        by brick. <br/> Together, let's build spaces that not only reflect your
+        aspirations but also stand as testaments to our commitment to quality
+        and innovation.
+      </p>
+      <h1 className="title">Mission</h1>
+      <p className="detail mb-6">
+        As proud contributors to Dubai's skyline, TKF Construction is dedicated
+        to shaping the city's future. Join us on a journey of transformative
+        construction that elevates the urban landscape.
+      </p>
     </div>
   );
 };

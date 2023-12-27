@@ -5,9 +5,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import HeaderTitle from "./HeaderTitle";
+import Footer from "./Footer";
+import { usePathname } from 'next/navigation'
 
 function MainHeader({ children }) {
+  const pathname = usePathname()
   return (
+    <>
     <section className="min-h-screen z-0 relative uppercase">
       <header className="z-20 bg-white sticky top-0 p-3 flex items-start justify-between shadow-lg mb-4">
         <motion.div
@@ -68,14 +72,14 @@ function MainHeader({ children }) {
           }}
           className="flex flex-row text-blue cursor-pointer"
         >
-          <p className="items-center hidden md:inline-flex header-btn">
-            our real estate
-          </p>
+          <Link href={"/Projects"} className="items-center hidden md:inline-flex header-btn">
+          HORIZON VENTURES REAL ESTATE
+          </Link>
         </motion.div>
       </header>
-      <main className="max-w-6xl mx-auto min-h-[400px]">
+      <main className="max-w-6xl mx-auto min-h-[450px]">
         <HeaderTitle/>{children}</main>
-      <div className="z-20 sticky bottom-2 float-right">
+      <div className="z-20 sticky bottom-8 float-right">
         <SocialIcon
           url="https://wa.me/971506677314"
           className="cursor-pointer text-sm mx-2"
@@ -84,6 +88,8 @@ function MainHeader({ children }) {
         />
       </div>
     </section>
+    {pathname !== '/' && <Footer />}
+    </>
   );
 }
 
