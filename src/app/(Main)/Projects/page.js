@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const page = () => {
   const initialProjects = [
     {
-      title: "Luxury Residence",
+      title: "Al Furjan Villa",
       description:
         "A stunning luxury residence that combines modern design with timeless elegance. This project showcases our commitment to craftsmanship and attention to detail.",
       imageUrl: "/jabel-front.jpeg",
