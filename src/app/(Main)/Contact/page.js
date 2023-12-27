@@ -7,7 +7,7 @@ const Contact = () => {
       <div>
         <iframe
           className="w-full h-64"
-          src="https://www.google.com/maps/"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28919.449812285977!2d55.132107299999994!3d25.036407899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f13221df91693%3A0xe776991f26288bcc!2sJebel%20Ali%20Village%20-%20Dubai!5e0!3m2!1sen!2sae!4v1703591346974!5m2!1sen!2sae"
           width="500"
           height="500"
           style={{ border: 0 }}

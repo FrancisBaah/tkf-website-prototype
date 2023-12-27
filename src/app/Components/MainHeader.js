@@ -68,16 +68,8 @@ function MainHeader({ children }) {
           }}
           className="flex flex-row text-blue cursor-pointer"
         >
-          {/* <SocialIcon
-          url="mailto:brightglobal11@gmail.com"
-          className="cursor-pointer text-sm mx-2"
-          network="email"
-          bgColor="#FFC50C"
-          fgColor="#4E2A8C"
-        /> */}
-
           <p className="items-center hidden md:inline-flex header-btn">
-            Visit our real estate
+            our real estate
           </p>
         </motion.div>
       </header>

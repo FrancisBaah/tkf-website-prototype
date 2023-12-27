@@ -5,7 +5,7 @@ import { GiRailRoad, GiStoneTower  } from "react-icons/gi";
 import Image from "next/image";
 const HomePage = () => {
   return (
-    <div className="h-full overflow-hidden">
+    <div className="h-screen w-screen top-0 left-0 overflow-hidden absolute">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
