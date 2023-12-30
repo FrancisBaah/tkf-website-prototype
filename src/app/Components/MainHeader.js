@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -7,9 +7,25 @@ import Link from "next/link";
 import HeaderTitle from "./HeaderTitle";
 import Footer from "./Footer";
 import { usePathname } from 'next/navigation'
+import { FaBars } from "react-icons/fa";
 
 function MainHeader({ children }) {
   const pathname = usePathname()
+  const [showBar, setShowBar] = useState(false)
+  const divRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (divRef.current && !divRef.current.contains(event.target)) {
+      setShowBar(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [showBar]);
   return (
     <>
     <section className="min-h-screen z-0 relative uppercase">
@@ -39,7 +55,8 @@ function MainHeader({ children }) {
             />
           </Link>
         </motion.div>
-        <motion.div className="flex gap-3">
+          <FaBars onClick={()=>setShowBar(!showBar)} className="block text-[#191646] md:hidden right-7 top-5 text-2xl absolute"/>
+        <motion.div ref={divRef}  className={`flex gap-3 md:space-x-7 ${showBar ? "flex-col border w-28 h-[200px] shadow-lg z-40 absolute right-14 bg-white" : "hidden md:block"}`}>
           <Link className="header-btn" href={"/"}>
             Home
           </Link>
