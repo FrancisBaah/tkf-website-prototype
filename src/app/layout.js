@@ -11,10 +11,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-  /*  <html lang="en">
+    { /*  <html lang="en">
     <link rel="icon" href="/tkf-logo.png" type="image" sizes="any" />
       <body className={inter.className}>
         <MainHeader>{children}</MainHeader></body>
-    </html> */
+    </html> */}
   )
 }
